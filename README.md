@@ -60,6 +60,22 @@ This project is an interactive Power BI dashboard built to monitor key airline p
 - **Detailed table:** flight date, origin, destination, expected vs. actual departure and arrival times, cancellation flag and distance.
 - **Treemap:** cancellations by destination. In the view shown, **Jackson (Mississippi)** has the largest block, followed by Atlanta, Los Angeles and Denver.
 
+
+## 🛠️ Tools 
+
+This dashboard was built with **Microsoft Power BI Desktop**. The data was cleaned and transformed with **Power Query**, and the calculations (totals, average departure and arrival delays) were written as **DAX measures**. 
+
+The report uses KPI cards, a bar chart, an area chart, scatter plots, a map, a treemap and a detailed table. Interactivity comes from slicers (month, day, year, origin, destination) and page navigation buttons.
+
+### Skills 
+
+- **Data preparation:** cleaning and transforming raw flight data with Power Query.
+- **DAX:** writing measures for totals and average departure/arrival delays.
+- **Data modeling:** building table relationships so slicers filter every page.
+- **Data visualization:** designing KPI cards, charts, maps, a treemap and a drill-down table.
+- **Analytical thinking:** turning patterns (cancellation peaks, delay gaps) into follow-up business questions.
+- **Version control:** documenting and publishing the project with Git and GitHub.
+
 ## 🔍 Key Observations
 
 - Monthly flight volume is stable, with February the lowest (3.0K vs. about 3.2K–3.3K).
@@ -75,40 +91,11 @@ This project is an interactive Power BI dashboard built to monitor key airline p
 | Arrival delay above departure delay | Is the gap linked to distance, congestion at destination or specific routes? |
 | Jackson (Mississippi) leads cancellations | Is this driven by flight volume at that airport or by a higher cancellation rate? |
 
-## 🛠️ Tools & Skills
 
-This dashboard was built with **Microsoft Power BI Desktop**. The data was cleaned and transformed with **Power Query**, and the calculations (totals, average departure and arrival delays) were written as **DAX measures**. 
-
-The report uses KPI cards, a bar chart, an area chart, scatter plots, a map, a treemap and a detailed table. Interactivity comes from slicers (month, day, year, origin, destination) and page navigation buttons.
-
-### Skills demonstrated by the author
-
-- **Data preparation:** cleaning and transforming raw flight data with Power Query.
-- **DAX:** writing measures for totals and average departure/arrival delays.
-- **Data modeling:** building table relationships so slicers filter every page.
-- **Data visualization:** designing KPI cards, charts, maps, a treemap and a drill-down table.
-- **Analytical thinking:** turning patterns (cancellation peaks, delay gaps) into follow-up business questions.
-- **Version control:** documenting and publishing the project with Git and GitHub.
-
-## 📁 Repository Structure
-
-```
-Airport-Analysis-Dashboard/
-├── Airport_Analysis_Dashboard.pbix                  # Power BI report file
-├── Airport_Analysis_Report.pdf                      # Project report
-│── flights_data.csv                                 
-│── page1_airport_analysis.png
-│── page2_delays_time_analysis.png
-│── page3_detailed_flight_analysis.png
-└── README.md
-```
 
 ## 🚀 How to Use
 
 1. Clone this repository:
-```bash
-   git clone https://github.com/<your-username>/Airport-Analysis-Dashboard.git
-```
 2. Install [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (Windows).
 3. Open the `.pbix` file.
 4. Use the slicers (month, day, year, origin, destination) and the navigation buttons to explore the three pages.
